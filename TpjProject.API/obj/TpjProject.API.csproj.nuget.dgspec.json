@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asma\\Desktop\\TPJ Project\\tpjproject.api\\TpjProject.API.csproj": {}
+    "C:\\Users\\Asma\\Desktop\\TPJ Project\\TpjProject.API\\TpjProject.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asma\\Desktop\\TPJ Project\\tpjproject.api\\TpjProject.API.csproj": {
+    "C:\\Users\\Asma\\Desktop\\TPJ Project\\TpjProject.API\\TpjProject.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asma\\Desktop\\TPJ Project\\tpjproject.api\\TpjProject.API.csproj",
+        "projectUniqueName": "C:\\Users\\Asma\\Desktop\\TPJ Project\\TpjProject.API\\TpjProject.API.csproj",
         "projectName": "TpjProject.API",
-        "projectPath": "C:\\Users\\Asma\\Desktop\\TPJ Project\\tpjproject.api\\TpjProject.API.csproj",
+        "projectPath": "C:\\Users\\Asma\\Desktop\\TPJ Project\\TpjProject.API\\TpjProject.API.csproj",
         "packagesPath": "C:\\Users\\Asma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asma\\Desktop\\TPJ Project\\tpjproject.api\\obj\\",
+        "outputPath": "C:\\Users\\Asma\\Desktop\\TPJ Project\\TpjProject.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -52,6 +56,14 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.7.1, )"
             }
           },
           "imports": [

@@ -5,8 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TpjProject.API.Data; 
 using Microsoft.EntityFrameworkCore; 
+using System.ComponentModel.DataAnnotations; 
+using Microsoft.AspNetCore.Authorization; 
 namespace TpjProject.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
@@ -17,6 +20,7 @@ namespace TpjProject.API.Controllers
             _context = context; 
         }
         // GET api/values
+         [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {

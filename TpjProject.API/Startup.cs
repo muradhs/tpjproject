@@ -12,6 +12,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using TpjProject.API.Data; 
 using Microsoft.EntityFrameworkCore; 
+using Microsoft.AspNetCore.Authentication.JwtBearer; 
+using Microsoft.IdentityModel.Tokens; 
+using System.Text;
 
 namespace TpjProject.API
 {
@@ -37,6 +40,20 @@ namespace TpjProject.API
                     builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                 });
         }); 
+            services.AddScoped <IAuthRepo , AuthRepo>(); 
+            // Service for jwt authentication 
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => {
+                options.TokenValidationParameters = new TokenValidationParameters
+                 {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey (Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value) ),
+                  ValidateIssuer = false,
+                  ValidateAudience =false 
+
+
+
+                }; 
+            }); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +68,7 @@ namespace TpjProject.API
 
             app.UseRouting();
             app.UseCors();
+            app.UseAuthentication(); 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
