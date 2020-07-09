@@ -1,0 +1,14 @@
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\bin\Debug\netcoreapp2.1\PerEvApi.deps.json
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\bin\Debug\netcoreapp2.1\PerEvApi.runtimeconfig.json
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\bin\Debug\netcoreapp2.1\PerEvApi.runtimeconfig.dev.json
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\bin\Debug\netcoreapp2.1\PerEvApi.dll
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\bin\Debug\netcoreapp2.1\PerEvApi.pdb
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\obj\Debug\netcoreapp2.1\PerEvApi.csprojAssemblyReference.cache
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\obj\Debug\netcoreapp2.1\PerEvApi.csproj.CoreCompileInputs.cache
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\obj\Debug\netcoreapp2.1\PerEvApi.RazorAssemblyInfo.cache
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\obj\Debug\netcoreapp2.1\PerEvApi.RazorAssemblyInfo.cs
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\obj\Debug\netcoreapp2.1\PerEvApi.AssemblyInfoInputs.cache
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\obj\Debug\netcoreapp2.1\PerEvApi.AssemblyInfo.cs
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\obj\Debug\netcoreapp2.1\PerEvApi.RazorTargetAssemblyInfo.cache
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\obj\Debug\netcoreapp2.1\PerEvApi.dll
+C:\Users\Asma\Desktop\TPJ Project\PerEvApi\PerEvApi\obj\Debug\netcoreapp2.1\PerEvApi.pdb
