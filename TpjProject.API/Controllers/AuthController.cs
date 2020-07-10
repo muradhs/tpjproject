@@ -63,7 +63,8 @@ namespace TpjProject.API.Controllers
            var tokenHandler = new JwtSecurityTokenHandler(); 
             var token = tokenHandler.CreateToken(tokenDescriptor );
             return Ok(new {
-                Token = tokenHandler.WriteToken(token)
+                Token = tokenHandler.WriteToken(token),
+                User = userForLogin.UserName
             });
         }
 

@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <div *ngIf="loggedIn() && !registerMode" style="text-align: center">
+     
+      <p class="lead">Register User </p>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg" (click)="toggleMode()">Register</button>
+       
+      </div>
+    </div>
+  
+    <div *ngIf="registerMode && loggedIn()" class="container">
+      <div class="row justify-content-center">
+        <div class="col-4">
+  <app-register (cancelRegister)="cancelRegister($event)" (userCreated)="userCreated($event)"></app-register>
+  <span *ngIf="userCreatedMode">One User is successfully Registered </span>
+        </div>
+      </div>
+    </div>
+  </div>

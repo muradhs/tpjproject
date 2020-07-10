@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ValueComponent } from './value.component';
+import { SidenavComponent } from './sidenav.component';
 
-describe('ValueComponent', () => {
-  let component: ValueComponent;
-  let fixture: ComponentFixture<ValueComponent>;
+describe('SidenavComponent', () => {
+  let component: SidenavComponent;
+  let fixture: ComponentFixture<SidenavComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ValueComponent ]
+      declarations: [ SidenavComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ValueComponent);
+    fixture = TestBed.createComponent(SidenavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
